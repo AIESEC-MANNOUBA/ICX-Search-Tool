@@ -1,0 +1,121 @@
+
+.opportunities {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .opportunities h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1b1b1b;
+  }
+  
+  /* Container for the cards */
+  .opportunity-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    gap: 2rem; /* Space between cards */
+  }
+  
+  /* Individual card styling */
+  .opportunity-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .opportunity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card image */
+  .opportunity-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+  
+  /* Card title */
+  .opportunity-card h3 {
+    font-size: 1.5rem;
+    color: #1b1b1b;
+    margin-bottom: 1rem;
+  }
+  
+  /* Card details */
+  .opportunity-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+  }
+  
+  .opportunity-card strong {
+    color: #1b1b1b;
+  }
+  
+  /* Learn more link */
+  .opportunity-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .opportunity-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .opportunity-cards {
+      gap: 1.5rem;
+    }
+  
+    .opportunity-card {
+      width: 280px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .opportunity-card {
+      width: 100%; /* Take full width of container on smaller screens */
+      max-width: 350px;
+      margin: 0 auto; /* Center the cards */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .opportunities h2 {
+      font-size: 2rem;
+    }
+  
+    .opportunity-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .opportunity-card p {
+      font-size: 0.9rem;
+    }
+  
+    .opportunity-link {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }
+  

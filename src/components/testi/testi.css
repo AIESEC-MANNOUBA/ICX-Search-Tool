@@ -1,0 +1,125 @@
+/* Container for the testimonials section */
+.testimonials-container {
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* Header styles */
+  .testimonials-header h4 {
+    font-size: 1rem;
+    color: #6c757d; /* Gray for subheading */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonials-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1b1b1b;
+    margin-bottom: 2rem;
+  }
+  
+  /* Carousel container */
+  .testimonials-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .testimonial-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Testimonial text */
+  .testimonial-quote {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Name and position */
+  .testimonial-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1b1b1b;
+    margin-top: 1rem;
+  }
+  
+  .testimonial-position {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 0.3rem;
+  }
+  
+  /* Carousel buttons */
+  .carousel-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #1b1b1b;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .carousel-btn:hover {
+    color: #4A148C; /* Dark purple for hover */
+  }
+  
+  /* Navigation dots */
+  .testimonials-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .nav-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-dot.active {
+    background-color: #1b1b1b; /* Active dot color */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .testimonial-card {
+      max-width: 90%;
+      padding: 1.5rem;
+    }
+  
+    .testimonials-header h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .testimonial-card {
+      padding: 1rem;
+    }
+  
+    .testimonials-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .carousel-btn {
+      font-size: 1.5rem;
+    }
+  }
+  

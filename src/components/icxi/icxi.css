@@ -1,0 +1,93 @@
+/* Main container */
+.icxi-container {
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .icxi-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1b1b1b;
+    margin-bottom: 2rem;
+  }
+  
+  /* Flexbox layout for cards */
+  .cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+  }
+  
+  /* Card styles */
+  .cardi {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cardi:hover {
+    transform: translateY(-10px); /* Add hover effect */
+  }
+  
+  .cardi img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .cardi-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1b1b1b;
+    margin-bottom: 0.8rem;
+  }
+  
+  .cardi-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .cards-container {
+      gap: 1rem; /* Reduce gap on smaller screens */
+    }
+  
+    .cardi {
+      width: 100%; /* Cards take full width on small screens */
+      max-width: 300px;
+      margin: 0 auto; /* Center cards */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .icxi-title {
+      font-size: 1.5rem;
+    }
+  
+    .cardi {
+      padding: 1rem;
+    }
+  
+    .cardi img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .cardi-title {
+      font-size: 1rem;
+    }
+  
+    .cardi-text {
+      font-size: 0.8rem;
+    }
+  }
+  
